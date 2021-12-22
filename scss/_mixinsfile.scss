@@ -1,0 +1,17 @@
+@mixin bp($point) {
+  @if $point == screen1600 {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == screen1200 {
+    @media (max-width: 1200px) { @content; }
+  }
+  @if $point == screen991 {
+    @media (max-width: 991px) { @content; }
+  }
+  @if $point == screenmin992 {
+    @media (min-width: 992px) { @content; }
+  }
+  @if $point == screen768 {
+    @media (max-width: 768px) { @content; }
+  }
+}
